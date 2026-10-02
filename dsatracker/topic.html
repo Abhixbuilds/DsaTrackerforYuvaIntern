@@ -1,0 +1,18 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css"><title>Topic - DSA Log</title></head><body>
+<a class="skip" href="#main">Skip to content</a><header class="top"><a class="brand" href="index.html">DSA Log</a><nav aria-label="Main"><a href="index.html" >Home</a><a href="dashboard.html" >Dashboard</a></nav></header>
+<main id="main"><div id="topic">
+  <a class="crumb" href="dashboard.html">Back to dashboard</a>
+  <h1 id="title"></h1><p class="lead" id="desc"></p>
+  <div class="bar" id="bar" role="progressbar" aria-label="Topic progress" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+  <p class="status" id="count" aria-live="polite"></p>
+  <div class="chips" role="group" aria-label="Filter by difficulty">
+    <button class="chip" data-l="all" aria-pressed="true">All</button>
+    <button class="chip" data-l="Easy" aria-pressed="false">Easy</button>
+    <button class="chip" data-l="Medium" aria-pressed="false">Medium</button>
+  </div>
+  <ul class="plist" id="plist"></ul>
+  <section class="notes"><h2>Notes</h2><label for="note" class="status">What tripped you up in this topic?</label>
+    <textarea id="note"></textarea><p class="status" id="status" aria-live="polite"></p></section>
+  <nav class="pager" id="pager" aria-label="Topic navigation"></nav>
+</div></main>
+<script src="js/data.js"></script><script src="js/store.js"></script><script src="js/topic.js"></script></body></html>

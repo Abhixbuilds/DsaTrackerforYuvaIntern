@@ -1,0 +1,21 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/styles.css"><title>Dashboard - DSA Log</title></head><body>
+<a class="skip" href="#main">Skip to content</a><header class="top"><a class="brand" href="index.html">DSA Log</a><nav aria-label="Main"><a href="index.html" >Home</a><a href="dashboard.html" aria-current="page">Dashboard</a></nav></header>
+<main id="main"><h1>Dashboard</h1>
+  <section class="stats" aria-label="Overall progress" aria-live="polite">
+    <div class="stat"><strong id="s-solved">0</strong><span>problems solved</span></div>
+    <div class="stat"><strong id="s-pct">0%</strong><span>overall</span></div>
+    <div class="stat"><strong id="s-topics">0</strong><span>topics finished</span></div>
+  </section>
+  <div class="controls">
+    <div class="search"><label for="search">Search topics</label><input id="search" type="search" placeholder="e.g. arrays"></div>
+    <div class="chips" role="group" aria-label="Filter by status">
+      <button class="chip" data-f="all" aria-pressed="true">All</button>
+      <button class="chip" data-f="todo" aria-pressed="false">Not started</button>
+      <button class="chip" data-f="doing" aria-pressed="false">In progress</button>
+      <button class="chip" data-f="done" aria-pressed="false">Done</button>
+    </div>
+  </div>
+  <ul class="grid" id="grid"></ul>
+  <p id="empty" hidden>No topics match. Clear the search or pick a different filter.</p>
+</main>
+<script src="js/data.js"></script><script src="js/store.js"></script><script src="js/dashboard.js"></script></body></html>
